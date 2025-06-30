@@ -8,7 +8,7 @@ import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
 version = "2024.12"
 
 project {
-    vcsRoot(HttpsGithubComJetBrainsResearchVerifiedCogenRefsHeadsMain)
+    vcsRoot(HttpsGithubComAlex28shVerifiedCogenRefsHeadsMain)
 
     buildType(Build)
 }
@@ -17,7 +17,7 @@ object Build : BuildType({
     name = "Build"
 
     vcs {
-        root(HttpsGithubComJetBrainsResearchVerifiedCogenRefsHeadsMain)
+        root(HttpsGithubComAlex28shVerifiedCogenRefsHeadsMain)
     }
 
     params {
@@ -76,9 +76,9 @@ object Build : BuildType({
     """.trimIndent()
 })
 
-object HttpsGithubComJetBrainsResearchVerifiedCogenRefsHeadsMain : GitVcsRoot({
-    name = "https://github.com/JetBrains-Research/verified-cogen#refs/heads/main"
-    url = "https://github.com/JetBrains-Research/verified-cogen"
+object HttpsGithubComAlex28shVerifiedCogenRefsHeadsMain : GitVcsRoot({
+    name = "https://github.com/alex28sh/verified-cogen#refs/heads/main"
+    url = "https://github.com/alex28sh/verified-cogen"
     branch = "refs/heads/main"
     branchSpec = "refs/heads/*"
     authMethod = password {
